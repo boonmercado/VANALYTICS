@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- **** Title **** -->
+    <title>SQL Sales Data Project: From Design to Real Life Insights</title>
+    <!-- **** Path **** -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- **** Font **** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="../index.html" class="nav-logo">
+                    <img src="../img/vonilytics.png" alt="[Your Name] Logo" class="logo-image">
+                    <!-- Note the ../img/ path -->
+               </a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="../projects.html" class="nav-link active">Projects</a></li> <!-- Projects link is active on detail pages -->
+                    <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                 <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- **** UNIQUE CONTENT FOR PROJECT 1 **** -->
+        <section class="project-detail fade-in">
+            <div class="container">
+                <!-- 1. Project Title -->
+                <h1>SQL Sales Data Project: From Design to Real Life Insights</h1>
+
+                <!-- 2. Main Image (Path goes UP then into img) -->
+                <img src="../img/projects/proj4.png" alt="img" class="main-project-image">
+
+                <!-- 3. Project Overview/Summary -->
+                <div class="project-content">
+                    <h2>Project Overview</h2>
+                    <p>
+                        This SQL project is all about getting hands-on with sales data. I took it from the very beginning – designing the database – all the way to writing queries that answer real business questions. The main idea was to show how I can set up a database, put data into it, and then use SQL to find useful information. It’s a good look at my practical SQL skills and how I approach turning data into actual insights.
+                    </p>
+                    <ul>
+                        <h3>Key Stages & Skills Demonstrated</h3>
+                            <p><strong>1. Database and Schema Design:</strong></p>
+                            <li>Conceptualized and designed a relational schema for a sales system involving core entities: <i>Customers, Products, Orders, and Order_Items.</i></li>
+                            <li>Defined appropriate columns, data types, and <i>PRIMARY KEY</i> constraints for each table.</li>
+                    </ul>
+                    <ul>
+                            <p><strong>2. Database & Table Creation (PostgreSQL):</strong></p>
+                            <li>Utilized SQL DDL commands (CREATE DATABASE, CREATE TABLE) to establish the database and implement the schema in PostgreSQL.</li>
+                    </ul>
+                    <ul>
+                        <!-- **** START: Dashboard Images Section **** -->
+                        <div class="dashboard-images">
+
+                            <!-- Image 1 -->
+                            <img src="../img/projects/projectss1/proj4-1.png" alt="Dashboard screenshot 1" class="dashboard-screenshot">
+                        </div>
+                    </ul>
+                    <!-- **** END: Dashboard Images Section **** -->
+
+                    <ul>
+                            <p><strong>3. Data Population:</strong></p>
+                            <li>UPopulated tables with sample data using <i>INSERT INTO</i> statements to simulate realistic records.</li>
+                    </ul>
+                    <!-- **** START: Dashboard Images Section **** -->
+                    <div class="dashboard-images"> 
+                        <!-- Image 2 -->
+                        <img src="../img/projects/projectss1/proj4-2.png" alt="Dashboard screenshot 2" class="dashboard-screenshot">
+                        <img src="../img/projects/projectss1/proj4-3.png" alt="Dashboard screenshot 2" class="dashboard-screenshot">
+                        <img src="../img/projects/projectss1/proj4-4.png" alt="Dashboard screenshot 2" class="dashboard-screenshot">
+                        <img src="../img/projects/projectss1/proj4-5.png" alt="Dashboard screenshot 2" class="dashboard-screenshot">
+                    </div>
+                    <!-- **** END: Dashboard Images Section **** -->
+
+                    <ul>
+                            <p><strong>4. Data Querying & Analysis:</strong></p>
+                            <li>Developed SQL queries to address specific business needs, employing techniques such as <i>SELECT, WHERE, INNER JOIN, SUM(), COUNT(), GROUP BY, HAVING, ORDER BY, and CONCAT().</i></li>
+                    </ul>
+
+                    <ul>
+                            <h3>Business Questions Addressed & Analyzed</h3>
+                                <p>
+                                    <strong>Identify Recent Customer Activity:</strong>&nbsp;Generated a targeted list of recent orders (placed on or after a specified date), displaying essential details like Order ID and Order Date, alongside the full name of the purchasing customer. This allows for timely follow-up or analysis of recent buyer behavior.
+                                </p>
+                                    <ul>
+                                        <li>Scenario: A marketing manager wants a list of all recent orders (placed on or after a specific date, e.g., '2023-10-05'), showing the Order ID, Order Date, and the Full Name of the customer who placed the order.</li>
+                                        <p><i>Key SQL: JOIN, CONCAT, WHERE (date filtering)</i></p>
+                                    </ul>
+                                            <div class="dashboard-images">
+                                                <!-- Image -->
+                                                <img src="../img/projects/projectss1/q1-1.png" alt="Dashboard screenshot" class="dashboard-screenshot">
+                                                <img src="../img/projects/projectss1/q1-2.png" alt="Dashboard screenshot" class="dashboard-screenshot">
+                                            </div>
+
+                                <p>
+                                    <strong>Analyze Revenue Performance by Product Category: </strong>&nbsp;Calculated and summarized the total revenue generated by each distinct product category. This provides a clear view of which categories are top financial performers and which might need more attention.
+                                </p>
+                                    <ul>
+                                        <p><i>Key SQL: JOIN, SUM(), GROUP BY</i></p>
+                                    </ul>    
+                                            <div class="dashboard-images">
+                                                <!-- Image -->
+                                                <img src="../img/projects/projectss1/q2-1.png" alt="Dashboard screenshot" class="dashboard-screenshot">
+                                                <img src="../img/projects/projectss1/q2-2.png" alt="Dashboard screenshot" class="dashboard-screenshot">
+                                            </div>
+
+                                <p>
+                                    <strong>Segment Customers by Order Frequency:  </strong>&nbsp;Identified customers who have placed multiple orders (specifically, more than one), ranking them by their order count. This helps in recognizing repeat customers for loyalty programs or targeted marketing.
+                                </p>
+                                    <ul>
+                                        <p><i>Key SQL: JOIN, SUM(), GROUP BY</i></p>
+                                    </ul>    
+                                            <div class="dashboard-images">
+                                                <!-- Image -->
+                                                <img src="../img/projects/projectss1/q3-1.png" alt="Dashboard screenshot" class="dashboard-screenshot">
+                                                <img src="../img/projects/projectss1/q3-2.png" alt="Dashboard screenshot" class="dashboard-screenshot">
+                                            </div>
+                                
+                                <p>
+                                    <strong>Evaluate Product Sales Volume: </strong>&nbsp;Determined the total quantity sold for each individual product across all transactions, presenting a ranked list of best-selling items. This insight is crucial for inventory management and understanding product popularity.
+                                </p>
+                                    <ul>
+                                        <p><i>Key SQL: JOIN, SUM(), GROUP BY, ORDER BY</i></p>
+                                    </ul>    
+                                            <div class="dashboard-images">
+                                                <!-- Image -->
+                                                <img src="../img/projects/projectss1/q4-1.png" alt="Dashboard screenshot" class="dashboard-screenshot">
+                                                <img src="../img/projects/projectss1/q4-2.png" alt="Dashboard screenshot" class="dashboard-screenshot">
+                                                
+                                            </div>           
+                                
+                                <p>
+                                    <strong>Assess Customer Lifetime Value (Total Spending): </strong>&nbsp;Calculated the total monetary amount spent by each customer across all their orders, identifying high-value customers. This is fundamental for customer segmentation and strategic relationship management.
+                                </p>
+                                    <ul>
+                                        <p><i>Key SQL: JOIN, SUM(), GROUP BY, CONCAT, ORDER BY</i></p>
+                                    </ul>    
+                                            <div class="dashboard-images">
+                                                <!-- Image -->
+                                                <img src="../img/projects/projectss1/q5-1.png" alt="Dashboard screenshot" class="dashboard-screenshot">
+                                                <img src="../img/projects/projectss1/q5-2.png" alt="Dashboard screenshot" class="dashboard-screenshot">
+                                                
+                                            </div>  
+
+                    </ul>
+
+
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li>Database Management System (DBMS): PostgreSQL</li>
+                        <li>Integrated Development Environment (IDE): Visual Studio Code</li>
+                        <li>SQL Extension: SQLTOOLS (for VS Code)</li>
+                    </ul>
+                            
+
+                    <!-- 8. Links -->
+                    <div class="detail-links">
+                        <a href="https://onedrive.live.com/edit?id=483FE9AF592A73FD!109&resid=483FE9AF592A73FD!109&ithint=file%2cxlsx&authkey=!ABkvBaYefD6fB_o&wdo=2&cid=483fe9af592a73fd" target="_blank" class="btn">View Full Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- **** END OF UNIQUE CONTENT **** -->
+    </main>
+
+     <footer>
+        <div class="container">
+             <p>&copy; 2025 Von Analytics. All rights reserved.</p>
+              <div class="social-links">
+                <a href="[Your LinkedIn URL]" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/boonmercado" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- **** Path goes UP one level then into js **** -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

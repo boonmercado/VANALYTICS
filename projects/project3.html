@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- **** CHANGE THIS TITLE for Project 1 **** -->
+    <title>Interactive Sales Dashboard in Tableau</title>
+    <!-- **** Path goes UP one level then into css **** -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- **** Font Awesome required here too **** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="../index.html" class="nav-logo">
+                    <img src="../img/vonilytics.png" alt="Von Analytics Logo" class="logo-image">
+                    <!-- Note the ../img/ path -->
+               </a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="../projects.html" class="nav-link active">Projects</a></li> <!-- Projects link is active on detail pages -->
+                    <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                 <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- **** UNIQUE CONTENT FOR PROJECT 1 **** -->
+        <section class="project-detail fade-in">
+            <div class="container">
+                <!-- 1. Project Title -->
+                <h1>Interactive Sales Dashboard in Tableau</h1>
+
+                <!-- 2. Main Image (Path goes UP then into img) -->
+                <img src="../img/projects/proj3.png.crdownload" alt="proj3" class="main-project-image">
+
+                <!-- 3. Project Overview/Summary -->
+                <div class="project-content">
+                    <h2>Project Overview</h2>
+                    <p>
+                        This project analyzes comprehensive sales data from 2011 to 2016, visualizing key performance indicators, trends, and revenue segmentation. The objective was to identify primary revenue drivers, evaluate performance trends, and understand the geographic distribution of sales, and presenting these insights through an interactive dashboard in Tableau.
+                    </p>
+
+                    <!-- 4. Key Features -->
+                    <h3>Performance</h3>
+                    <ul>
+                        <p>Over the observed period, the business achieved substantial results, generating approximately 85.3 million in total revenue and 32.2 million in profit, derived from 1.35 million orders. This translates to a strong indicative overall profit margin of approximately 37.8%.</p>
+                    </ul> 
+
+                    <h3>Trend Analysis</h3>
+                    <ul>
+                        <li><strong>Revenue: </strong>Annual revenue exhibited a significant upward trajectory, increasing from approximately $9 million in the initial years to a peak exceeding $20 million in 2015. A subsequent moderate decline was observed in 2016. Notably, a temporary dip occurred between 2013 and 2014 before resuming strong growth.</li>
+                        <li><strong>Profit: </strong>Annual profit demonstrated consistent year-over-year growth between 2011 and 2015, culminating in a peak exceeding $8 million. Congruent with revenue trends, profit experienced a slight decrease in 2016.</li>
+                    </ul>
+                    
+                    <h3>Revenue Composition</h3>
+                    <ul>
+                        <p><strong>By Product Category: </strong>The "Bikes" category stands as the dominant revenue contributor, significantly outpacing other segments and driving the overall revenue peak observed in 2015 (exceeding $15 million for the category). "Accessories" represent the second-largest category, displaying moderate growth, while "Clothing" consistently contributed the smallest revenue share.</p>
+                        <p><strong>By Geography: </strong>Revenue generation is heavily concentrated in North America, identified as the primary market region. Australia constitute significant secondary markets while key European markets (UK, France, and Germany) are at the bottom part.</p>
+                    </ul> 
+
+                    <h3>Concluding Insights</h3>
+                    <ul>
+                        <p>The analysis highlights a period of strong growth culminating in 2015, followed by a slight contraction in 2016 that warrants further investigation. The business demonstrates a high degree of reliance on the "Bikes" category for revenue generation. Furthermore, sales success is geographically concentrated in North America and select European/Australian markets, indicating potential opportunities for focused growth or strategic market development initiatives.</p>
+                    </ul> 
+
+          <!-- **** Tableau Embed Section **** -->
+          <div class="tableau-embed-container">
+              <h3>Interactive Dashboard</h3>
+
+              <div class='tableauPlaceholder' id='viz1744387080597' style='position: relative'><noscript><a href='#'><img alt='Sales Dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RD&#47;RD5J8ZY93&#47;1_rss.png' style='border: none' /></a></noscript>
+                <object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='path' value='shared&#47;RD5J8ZY93' /> 
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RD&#47;RD5J8ZY93&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                </object>
+            </div>                
+            <script type='text/javascript'>                    
+                var divElement = document.getElementById('viz1744387080597');                    
+                var vizElement = divElement.getElementsByTagName('object')[0];                    
+                if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1600px';vizElement.style.minHeight='1027px';vizElement.style.maxHeight='1527px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+                else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1600px';vizElement.style.minHeight='1027px';vizElement.style.maxHeight='1527px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+                else { vizElement.style.width='100%';vizElement.style.height='1377px';}                     
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+
+          </div>
+          
+          <h3>Tools & Technologies</h3>
+          <ul>
+                    <!-- 5. Technologies Used -->
+                    <ul>
+                        <li>Tableau</li>
+                        <li>Kaggle</li>
+                    </ul>
+
+                    <!-- 8. Links -->
+                    <div class="detail-links">
+                         <!-- Link to live demo IF AVAILABLE (e.g., public Power BI link, Tableau Public) -->
+                        <a href="https://public.tableau.com/app/profile/von.mercado/viz/6-YearAnalysisDashboardFixed/SalesDashboard#1" target="_blank" class="btn">View in Tableau</a>
+                         <!-- Link to GitHub repo IF code exists, otherwise maybe remove this button -->
+                        <a href="https://www.kaggle.com/datasets/jehanzaibbhatti/sales-data" target="_blank" class="btn-outline">View Dataset</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- **** END OF UNIQUE CONTENT **** -->
+    </main>
+
+     <footer>
+        <div class="container">
+             <p>&copy; 2025 Von Analytics. All rights reserved.</p>
+              <div class="social-links">
+                <a href="[Your LinkedIn URL]" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/boonmercado" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- **** Path goes UP one level then into js **** -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

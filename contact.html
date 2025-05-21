@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-logo">
+                    <img src="img/vonilytics.png" alt="[Your Name] Logo" class="logo-image">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                 <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-page fade-in">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>I'm currently exploring opportunities in data analysis and/or business intelligence. Feel free to reach out!</p>
+
+                <div class="contact-methods">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:boonmercado@gmail.com">boonmercado@gmail.com</a></p>
+                        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="[Your LinkedIn URL]" target="_blank">Connect on LinkedIn</a></p>
+                        <p><i class="fab fa-github"></i> GitHub/Portfolio: <a href="[Your GitHub URL or relevant profile]" target="_blank">View My Work</a></p>
+                        <!-- Add other contact methods if desired -->
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h3>Send Me a Message</h3>
+                        <!-- Remember to set up Formspree or similar -->
+                        <form action="https://formspree.io/f/mldjzrnj" method="POST" class="contact-form">
+                             <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                             <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="_replyto" required>
+                            </div>
+                             <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                         <p class="form-note">Note: This is a live form for genuine inquiries. Kindly refrain from sending spam or test messages excessively. Thank you! </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <footer>
+        <div class="container">
+             <p>&copy; 2025 Von Analytics. All rights reserved.</p>
+              <div class="social-links">
+                <a href="[Your LinkedIn URL]" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/boonmercado" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
